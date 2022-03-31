@@ -2,8 +2,11 @@ const PORT = 8000;
 const axios = require("axios");
 const cheerio = require("cheerio");
 const express = require("express");
+const cors = require("cors");
 
 const app = express();
+
+app.use(cors());
 
 // WEB SCRAPING
 const url = "https://www.ufc.com/rankings";

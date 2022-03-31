@@ -27,15 +27,16 @@ body{
     background-color: white;
     overflow-y: scroll;
     min-height: 50vh;
-    width: 80%;
+    width: 40%;
+    text-align: center;
     padding: 1rem;
     font-size: 1.2rem;
-    line-height: 1rem;
+    line-height: 1.2rem;
 }
 
 .description{
     width: 80%;
-    margin: 1rem 0rem;
+    margin: .5rem 0rem;
     font-size: 1.2rem;
     text-align: center;
     background-color: white;
