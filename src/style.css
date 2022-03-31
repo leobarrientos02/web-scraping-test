@@ -21,6 +21,15 @@ body{
     text-align: center;
 }
 
+.description{
+    width: 80%;
+    margin: .5rem 0rem;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+}
+
 .content-wrapper{
     border: .2rem solid #48cae4;
     border-radius: 10px;
@@ -31,14 +40,12 @@ body{
     text-align: center;
     padding: 1rem;
     font-size: 1.2rem;
-    line-height: 1.2rem;
 }
 
-.description{
-    width: 80%;
-    margin: .5rem 0rem;
-    font-size: 1.2rem;
-    text-align: center;
-    background-color: white;
-    padding: 2rem;
+.ranking{
+    text-decoration: underline;
+    font-size: 1.4rem;
+}
+.champ{
+    color: gold;
 }
