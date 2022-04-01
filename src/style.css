@@ -45,6 +45,7 @@ body{
 .ranking{
     text-decoration: underline;
     font-size: 1.4rem;
+    margin-top: 1rem;
 }
 .champ{
     color: gold;

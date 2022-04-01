@@ -1,7 +1,7 @@
 const content = document.querySelector(".content");
 
 let RankingDivision = [
-  "Men's Pound-FOR-POUND",
+  "Men's Pound-For-Pound",
   "FLYWEIGHT",
   "BANTAMWEIGHT",
   "FEATHERWEIGHT",
@@ -10,11 +10,25 @@ let RankingDivision = [
   "MIDDLEWEIGHT",
   "LIGHT HEAVYWEIGHT",
   "HEAVYWEIGHT",
-  "WOMENS POUND-FOR-POUND",
-  "WOMENS STRAWWEIGHT",
-  "WOMENS FLYWEIGHT",
-  "WOMENS BANTAMWEIGHT",
-  "WOMENS FEATHERWEIGHT",
+  "WOMEN'S Pound-For-Pound",
+  "WOMEN'S STRAWWEIGHT",
+  "WOMEN'S FLYWEIGHT",
+  "WOMEN'S BANTAMWEIGHT",
+  "WOMEN'S FEATHERWEIGHT",
+];
+
+let Champions = [
+  "Kamaru Usman",
+  "Israel Adesanya",
+  "Alexander Volkanovski",
+  "Francis Ngannou",
+  "Charles Oliveira",
+  "Glover Teixeira",
+  "Deiveson Figueiredo",
+  "Aljamain Sterling",
+  "Valentina Shevchenko",
+  "Rose Namajunas",
+  "Julianna Peña",
 ];
 
 fetch("http://localhost:8000/results")
@@ -40,7 +54,11 @@ fetch("http://localhost:8000/results")
       `<p class='ranking'>` + RankingDivision[13] + `</p>`;
 
     `<p class='ranking'>` + RankingDivision[1] + `</p>`;
+
+    // OUTPUT
     content.insertAdjacentHTML("beforeend", divisionTitle0);
+    var j = 1;
+
     for (var i = 0; i < data.length; i++) {
       const name = `<p>` + data[i] + `</p>`;
       content.insertAdjacentHTML("beforeend", name);
@@ -48,6 +66,7 @@ fetch("http://localhost:8000/results")
       if (i === 14) {
         content.insertAdjacentHTML("beforeend", divisionTitle1);
       }
+
       if (i === 30) {
         content.insertAdjacentHTML("beforeend", divisionTitle2);
       }
